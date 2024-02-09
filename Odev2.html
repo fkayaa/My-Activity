@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>RotateZ Örnek</title>
+<style>
+
+body {
+    background         : #ddd;
+}
+
+body img {
+    -webkit-transition : all 1s;
+    -moz-transition    : all 1s;
+    transition         : all 1s;
+    border             : thin solid #000;
+    border-radius      : 0.5em;
+    position           : absolute;
+    top                : 200px;
+    left               : 100px;
+}
+
+body img:first-of-type {
+    opacity            : 0.3;
+}
+
+body.alt img:last-of-type {
+    -ms-transform: rotateZ(45deg);
+    -webkit-transform: rotateZ(45deg);
+    -moz-transform: rotateZ(45deg);
+    transform: rotateZ(45deg);
+}
+
+</style>
+
+</head>
+<body class="alt">
+
+<img src="bilgeis.png">
+<img src="bilgeis.png">
+
+<script src="yokEt.js"></script>
+
+
+</body></html>
+  
